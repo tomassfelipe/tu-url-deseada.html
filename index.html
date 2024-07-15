@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigir y Cerrar</title>
+    <script type="text/javascript">
+        function redirigirYCerrar() {
+            // Redirigir a la URL deseada
+            window.location.href = "https://www.tu-url-deseada.com";
+
+            // Esperar unos segundos antes de intentar cerrar la ventana
+            setTimeout(function() {
+                // Intentar cerrar la ventana
+                window.close();
+            }, 5000); // 5000 milisegundos = 5 segundos
+        }
+
+        // Ejecutar la función cuando la página se haya cargado completamente
+        window.onload = redirigirYCerrar;
+    </script>
+</head>
+<body>
+    <h1>Redireccionando...</h1>
+</body>
+</html>
